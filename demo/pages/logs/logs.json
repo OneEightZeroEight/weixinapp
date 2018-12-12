@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#666666",
+  "navigationBarTitleText": "查看启动日志",
+  "usingComponents": {
+    "xsearch": "/components/search/search",
+    "xpanel": "/components/panel/panel"
+  }
+}

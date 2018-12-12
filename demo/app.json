@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/webview/webview",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#58bc58",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "音乐",
+    "navigationStyle": "default",
+    "backgroundColor": "#58bc58",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "pageOrientation": "auto"
+  },
+  "tabBar": {
+    "position": "top",
+    "color": "#666666",
+    "selectedColor": "#58bc58",
+    "backgroundColor": "#66666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新歌榜",
+        "iconPath": "/icons/happy.png",
+        "selectedIconPath": "/icons/unhappy.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "热歌榜"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "摇滚榜"
+      },
+      {
+        "pagePath": "pages/webview/webview",
+        "text": "爵士"
+      }
+    ]
+  }
+}

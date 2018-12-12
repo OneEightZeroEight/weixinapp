@@ -1,0 +1,20 @@
+<picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{lry}}" wx:for-index="idx" wx:for-item="itemName" style="line-height: 50px">{{idx}}:{{itemName}}:{{item}}</view>
+    </picker-view-column>
+</picker-view>
+
+<audio
+  poster="{{poster}}"
+  name="{{name}}"
+  author="{{author}}"
+  src="{{src}}"
+  id="myAudio"
+  controls
+  loop
+></audio>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
