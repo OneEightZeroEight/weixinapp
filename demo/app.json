@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/webview/webview",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/wux/wux"
   ],
   "window": {
     "navigationBarBackgroundColor": "#58bc58",
@@ -40,6 +41,10 @@
       {
         "pagePath": "pages/webview/webview",
         "text": "爵士"
+      },
+      {
+        "pagePath": "pages/wux/wux",
+        "text": "wux"
       }
     ]
   }

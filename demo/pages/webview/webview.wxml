@@ -1,1 +1,36 @@
-<web-view src="http://localhost:8080/"></web-view>
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:search="onSearch"
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<van-button type="default" bindtap='toggle'>默认按钮</van-button>
+<van-popup
+  show="{{ show }}"
+  position="right"
+  overlay="{{ false }}"
+  bind:close="onClose"
+>
+  内容
+</van-popup>
+<van-card
+  num="2"
+  tag="标签"
+  price="2.00"
+  desc="描述信息"
+  title="商品标题"
+  thumb="{{ imageURL }}"
+>
+  <view slot="footer">
+    <van-button size="mini">按钮</van-button>
+    <van-button size="mini">按钮</van-button>
+  </view>
+</van-card>
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="shop">标签</van-tabbar-item>
+  <van-tabbar-item icon="chat" dot>标签</van-tabbar-item>
+  <van-tabbar-item icon="records" info="5">标签</van-tabbar-item>
+  <van-tabbar-item icon="gold-coin" info="20">标签</van-tabbar-item>
+</van-tabbar>
